@@ -1,4 +1,5 @@
 # Crowdfunding ETL
+This project involves the creation of an ETL (Extract, Transform, Load) pipeline using Python, Pandas, and other data manipulation techniques for crowdfunding data. The goal of this project is to extract data from Excel files, transform it into structured formats, create CSV files, and prepare the data for analysis and database storage.
 
 ## Authors
 - Sam Lind [https://github.com/SamLind11]
@@ -6,7 +7,7 @@
 
 ## Description
 
-This repository contains files written to extract, transform, and load data provided in the form of two Excel files.  The main deliverable of the project is a Jupyter Notebook file which reads in data from each Excel file for processing and cleaning.  The crowdfunding.xlsx data is uploaded into a Pandas Dataframe, where cateogry and subcategory are broken out into two separate columns, then assigned category ids which are exported in the category.csv and subcategory.csv files.  Other fields of the data are converted to appropriate data types before the data is exported to the campaign.csv file.  Similarly, the contacts.xlsx file is extracted into a Dataframe, where its fields can be broken out into individual column.  After some more data cleaning, the data is exported to contacts.csv.
+The file named "ETL_Mini_Project_Starter_Code_SLind_EReid.ipynb" contains the coding to structure formats, create CSV files, and prepare the data that is located in the "Resources" folder in the git. This file uses Numpy, Pandas, and JSON to accomplish the goal stated above. The project's first step is to extract crowdfunding data in the "Resources" folder. The second step is to create the category and subcategory dataframes with the data extracted. this was accomplished by dividing the "category/subcategory" column into separate categories named "category" and "subcategory". The category and subcategory columns data were replaced with corresponding IDs ex: cat1, cat2, subcat1, subcat2. These new data points were placed into a new dataframe and then placed into their respective columns. The third step of the project is to create campaign dataframes and export them into a CSV file. In this portion of the project, a campaign dataframe was created, cleaned, and managed so that the data was comprehensible and only useful data was collected. The CSV file titled "campaign.csv" was created at the very end of the creation of the campaign dataframe with the appropriate changes made.  Similarly, the contacts.xlsx file is extracted into a Dataframe, where its fields can be broken out into individual columns.  After some more data cleaning, the data is exported to contacts.csv.
 
 ![crowdfunding_ERD](https://github.com/SamLind11/Crowdfunding_ETL/assets/131621692/24872635-95b6-4a6d-a050-5e7bd68aaf5a)
 
